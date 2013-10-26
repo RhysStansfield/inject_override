@@ -1,0 +1,9 @@
+Own basic implementation of inject -
+
+  * First method in inject_or.rb (Array#new_inject) was test method that I first built my own implementation in
+
+  * Second method in inject_or.rb (Array#inject) is the exact same as Array#new_inject to check that rspec still works when inject is overwritten
+
+  * Tests in inject_or_spec.rb in the 'Testing original inject method' context were originally written when I wasn't overwriting Array#inject to test the behaviour of my Array#new_inject method against the original - this makes them obsolete now but comment out my Array#inject method in inject_or.rb to check behaviour of my method against the original
+
+  * Final test in inject_or_spec.rb in the 'Testing own inject method' context is empty - it is purely to give visual message when running rspec that rspec hasn't exploded even though inject has been overwritten
